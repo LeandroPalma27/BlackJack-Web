@@ -71,7 +71,58 @@ body {
 }
 
 .computer-buttons, .person-buttons {
+    display: flex;
+    flex-direction: column;
     width: 20%;
+}
+
+.person-buttons .buttons-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-buttons .buttons-game button {
+    margin: 10px;
+    width: 140px;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(26, 26, 26);
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.person-buttons .buttons-game button:hover {
+    opacity: 0.9;
+}
+
+.computer-buttons .buttons , .person-buttons .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.computer-buttons .buttons button, .person-buttons .buttons button{
+    margin: 5px;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.computer-buttons .buttons button:hover, .person-buttons .buttons button:hover {
+    background-color: rgb(211, 28, 28);
+    color: #fff;
+}
+
+.computer-buttons .buttons #endGameForComputerOrSecondPlayer:hover, .person-buttons .buttons #endGame:hover {
+    background-color: rgb(34, 56, 128);
+    color: #fff;
 }
 
 .cards {
@@ -83,4 +134,8 @@ body {
     color: #fff;
     font-size: 25px;
     font-weight: bold;
+}
+
+h2 {
+    margin: 0;
 }
