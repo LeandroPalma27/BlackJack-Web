@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Blackjack-LeanCode</title>
+</head>
+<body>
+    <div class="container-principal">
+        <div class="player_person">
+            <section class="person-cards">
+                <h2>Jugador 1</h2>
+                <div class="cards_person-player"></div>
+                <div class="person-info"></div>
+            </section>
+            <section class="person-buttons">
+                <div class="buttons">
+                    <button id="addCard">Tirar carta</button>
+                    <button id="endGame">Terminar juego</button>
+                </div>
+                <div class="buttons-game">
+                    <button id="restartButton">Reiniciar juego</button>
+                    <!-- <button>Suerte!!</button> -->
+                </div>
+            </section>
+        </div>
+        <div class="player_computer">
+            <section class="computer-cards">
+                <h2>Jugador 2</h2>
+                <div class="cards_computer-player"></div>
+                <div class="computer-info"></div>
+            </section>
+            <section class="computer-buttons">
+                <div class="buttons">
+                    <button id="addCardComputerOrSecondPlayer" >Tirar carta</button>
+                    <button id="endGameForComputerOrSecondPlayer" >Terminar juego</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="assets/js/cards-object.js"></script>
+    <script src="assets/js/random-number.js"></script>
+    <script src="assets/js/repeat-cards.js"></script>
+    <script src="assets/js/add-card.js"></script>
+    <script src="assets/js/blackjack-or-lose.js"></script>
+    <script src="assets/js/stop-match.js"></script>
+    <script src="assets/js/restart-game.js"></script>
+</body>
+</html>

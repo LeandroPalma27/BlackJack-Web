@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://m.media-amazon.com/images/I/A1DGel5VHBL._AC_SL1500_.jpg');
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.container-principal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.player_person {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.player_computer {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.container-principal .player_person section {
+    height: 100%;
+    display: flex;
+}
+
+.container-principal .player_computer section {
+    height: 100%;
+    display: flex;
+}
+
+.computer-cards, .person-cards {
+    width: 80%;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.computer-cards h2, .person-cards h2 {
+    height: 15%;
+    color: #fff;
+}
+
+.computer-cards .cards_computer-player, .person-cards .cards_person-player {
+    height: 55%;
+    box-sizing: border-box;
+}
+
+.computer-cards .computer-info, .person-cards .person-info {
+    height: 30%;
+}
+
+.cards_person-player, .cards_computer-player {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+}
+
+.computer-buttons, .person-buttons {
+    width: 20%;
+}
+
+.cards {
+    width: 100%;
+    height: 100%;
+}
+
+.person-info, .computer-info {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
