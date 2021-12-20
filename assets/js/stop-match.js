@@ -9,7 +9,6 @@ endGame.addEventListener('click', () => {
     valuesPlayers.push(personInfo.innerText);
     buttonAddCardPerson.disabled = true;
     endGame.disabled = true;
-    console.log(valuesPlayers);
     buttonAddCardPerson.classList.toggle('addCardNoHover');
     buttonAddCardPerson.classList.remove('addCardHover');
     endGame.classList.toggle('endGameNoHover');
@@ -23,9 +22,9 @@ endGameForComputerOrSecondPlayer.addEventListener('click', () => {
     valuesPlayers.push(computerInfo.innerText);
     buttonAddCardComputer.disabled = true;
     endGameForComputerOrSecondPlayer.disabled = true;
-    console.log(valuesPlayers);
     buttonAddCardComputer.classList.toggle('addCardComputerOrSecondPlayerNoHover');
     buttonAddCardComputer.classList.remove('addCardComputerOrSecondPlayerHover');
     endGameForComputerOrSecondPlayer.classList.toggle('endGameForComputerOrSecondPlayerNoHover');
     endGameForComputerOrSecondPlayer.classList.remove('endGameForComputerOrSecondPlayerHover');
+    winDrawOrLose(valuesPlayers);
 });

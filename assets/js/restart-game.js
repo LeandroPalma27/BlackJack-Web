@@ -7,6 +7,7 @@ restartArrayValues.addEventListener('click', () => {
     buttonAddCardComputer.disabled = false;
     paresCartas = [];
     cardValues = [];
+    valuesPlayers = [];
     personInfo.innerHTML = '';
     computerInfo.innerHTML = '';
     endGame.disabled = false;

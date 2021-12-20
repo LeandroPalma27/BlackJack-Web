@@ -13,5 +13,6 @@ Primera version funcional mejorada (Efectos sobre botones, diseño responsivo y 
 
 ## Pendiente:
 
-- Agregar efectos visuales
-- Cuando se pare el juego de algun jugador, se debe comparar con lo que el 2do jugador haga para asi poder mostrar quien gano.
+- Agregar efectos visuales para los resultados de los ganadores y perdedores (por consola ya esta).
+- Que jugador 2 no pueda tirar hasta que jugador 1 termine su jugada o pierda o haga blackjack.
+

@@ -8,7 +8,6 @@ const sumaValoresFirstPlayer = (array) => {
         cont += (array[numero] + 1);
     }
     if (cont == 21) {
-        console.log('Blackjack!!');
         paresCartas = [];
         cardValues = [];
         buttonAddCardPerson.disabled = true;
@@ -16,8 +15,8 @@ const sumaValoresFirstPlayer = (array) => {
         buttonAddCardPerson.classList.remove('addCardHover');
         endGame.classList.toggle('endGameNoHover');
         endGame.classList.remove('endGameHover');
+        winDrawOrLoseForAutomate(cont);
     } else if (cont > 21) {
-        console.log('Perdiste');
         paresCartas = [];
         cardValues = [];
         endGame.disabled = true;
@@ -26,6 +25,7 @@ const sumaValoresFirstPlayer = (array) => {
         buttonAddCardPerson.classList.remove('addCardHover');
         endGame.classList.toggle('endGameNoHover');
         endGame.classList.remove('endGameHover');
+        winDrawOrLoseForAutomate(cont);
     }
     personInfo.innerHTML = cont;
 }
@@ -36,7 +36,6 @@ const sumaValoresSecondPlayer = (array) => {
         cont += (array[numero] + 1);
     }
     if (cont == 21) {
-        console.log('Blackjack!!');
         paresCartas = [];
         cardValues = [];
         buttonAddCardComputer.disabled = true;
@@ -44,8 +43,8 @@ const sumaValoresSecondPlayer = (array) => {
         buttonAddCardComputer.classList.remove('addCardComputerOrSecondPlayerHover');
         endGameForComputerOrSecondPlayer.classList.toggle('endGameForComputerOrSecondPlayerNoHover');
         endGameForComputerOrSecondPlayer.classList.remove('endGameForComputerOrSecondPlayerHover');
+        winDrawOrLoseForAutomate(cont);
     } else if (cont > 21) {
-        console.log('Perdiste');
         paresCartas = [];
         cardValues = [];
         endGameForComputerOrSecondPlayer.disabled = true;
@@ -54,6 +53,7 @@ const sumaValoresSecondPlayer = (array) => {
         buttonAddCardComputer.classList.remove('addCardComputerOrSecondPlayerHover');
         endGameForComputerOrSecondPlayer.classList.toggle('endGameForComputerOrSecondPlayerNoHover');
         endGameForComputerOrSecondPlayer.classList.remove('endGameForComputerOrSecondPlayerHover');
+        winDrawOrLoseForAutomate(cont);
     }
     computerInfo.innerText = cont;
 }
