@@ -4,9 +4,12 @@ Este repositorio contiene alojada mi aplicacion del juego de cartas "blackjack".
 
 Para la version de 2 jugadores, localmente ellos decidiran quien empieza el juego.
 
-## 18/12/2021
+## 18/12/2021 (no recuerdo a que hora asi que dire que fue en la mañana)
 
 Primera version funcional terminada.
+## 18/12/2021 (22:00 hora de Perú)
+
+Primera version funcional mejorada (Efectos sobre botones, diseño responsivo y correccion de algunos bugs).
 
 ## Pendiente:
 

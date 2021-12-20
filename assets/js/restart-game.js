@@ -13,4 +13,16 @@ restartArrayValues.addEventListener('click', () => {
     endGameForComputerOrSecondPlayer.disabled = false;
     buttonAddCardComputer.disabled = false;
     buttonAddCardPerson.disabled = false;
+    if (buttonAddCardPerson.matches('.addCardHover') == false) {
+        buttonAddCardPerson.classList.add('addCardHover');
+        buttonAddCardPerson.classList.toggle('addCardNoHover');
+        endGame.classList.toggle('endGameNoHover');
+        endGame.classList.add('endGameHover');
+    }
+    if (buttonAddCardComputer.matches('.addCardComputerOrSecondPlayerHover') == false) {
+        buttonAddCardComputer.classList.toggle('addCardComputerOrSecondPlayerNoHover');
+        buttonAddCardComputer.classList.add('addCardComputerOrSecondPlayerHover');
+        endGameForComputerOrSecondPlayer.classList.toggle('endGameForComputerOrSecondPlayerNoHover');
+        endGameForComputerOrSecondPlayer.classList.add('endGameForComputerOrSecondPlayerHover');
+    }
 });
