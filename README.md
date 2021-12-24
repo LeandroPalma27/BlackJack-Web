@@ -15,4 +15,10 @@ Primera version funcional mejorada (Efectos sobre botones, diseño responsivo y 
 
 - Agregar efectos visuales para los resultados de los ganadores y perdedores (por consola ya esta).
 - Que jugador 2 no pueda tirar hasta que jugador 1 termine su jugada o pierda o haga blackjack.
+- Implementar logica de la computadora (menu de inicio que decida si es para un jugador o 2 jugadores).
+
+## F - H
+
+- La carpeta assets es para almacenar archivos estaticos.ç
+- Para proyectos asi, seria bueno empezar que la mayoria de cosas se cargue por consola al inicio.
 
